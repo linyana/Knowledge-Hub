@@ -4,7 +4,7 @@ import {
 import {
   Navigate,
 } from 'react-router-dom'
-import { Menu } from '../pages';
+import { Menu } from '@/pages';
 
 
 export interface RouteItem {
