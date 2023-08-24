@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/Knowledge-Hub",
+  base: "/Knowledge-Hub/",
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),

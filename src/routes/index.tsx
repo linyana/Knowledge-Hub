@@ -20,7 +20,7 @@ export interface RouteItem {
 export const routes: Array<RouteItem> = [
   {
     id: 'home',
-    element: <Navigate to="/home" />,
+    element: <Navigate to="/menu" />,
     path: '/',
   },
   {

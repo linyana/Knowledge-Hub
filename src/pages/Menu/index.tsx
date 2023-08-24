@@ -1,5 +1,10 @@
+import { Box, Header } from "@/components"
+
 export const Menu = () => { 
   return (
-    <div>Hello world!</div>
+    <>
+      <Header />
+      <Box>Hello world!</Box>
+    </>
   )
 }
