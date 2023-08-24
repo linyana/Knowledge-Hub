@@ -4,7 +4,10 @@ import {
 import {
   Navigate,
 } from 'react-router-dom'
-import { Menu } from '@/pages';
+import {
+  Menu,
+  List,
+} from '@/pages';
 
 
 export interface RouteItem {
@@ -27,6 +30,11 @@ export const routes: Array<RouteItem> = [
     id: 'menu',
     element: <Menu />,
     path: 'menu',
+  },
+  {
+    id: 'list',
+    element: <List />,
+    path: 'list',
   },
   {
     id: 'not-found',
