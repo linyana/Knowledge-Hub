@@ -1,12 +1,22 @@
+.menu_title {
+  margin-left: 1%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(78, 76, 76);
+  margin-bottom: 1rem;
+}
+
 .menu_card {
   cursor: pointer;
-  width: 23%;
+  width: 22.6%;
   margin: 0 1%;
   height: 60px;
   border: 2px solid rgb(233, 233, 233);
+  min-width: 160px;
   box-shadow: 0 0 12px #0000001a;
   transition: all 0.3s;
-  border-radius: 4px;
+  border-radius: 6px;
+  margin-bottom: 24px;
 }
 
 .menu_card:hover {
@@ -22,7 +32,6 @@
 }
 
 .menu_card_right {
-  padding: 8px 0;
   padding-right: 5%;
   width: 70%;
 }
@@ -37,4 +46,5 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   color:rgb(160, 160, 160);
+  line-height: 1.2rem;
 }
