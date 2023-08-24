@@ -1,0 +1,40 @@
+.menu_card {
+  cursor: pointer;
+  width: 23%;
+  margin: 0 1%;
+  height: 60px;
+  border: 2px solid rgb(233, 233, 233);
+  box-shadow: 0 0 12px #0000001a;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.menu_card:hover {
+  box-shadow: 
+  0px 3px 6px -4px rgba(0,0,0,0.12),
+  0px 6px 16px 0px rgba(0,0,0,0.08),
+  0px 9px 28px 8px rgba(0,0,0,0.05);
+}
+
+.menu_card img {
+  width: 60%;
+  aspect-ratio: 1/1;
+}
+
+.menu_card_right {
+  padding: 8px 0;
+  padding-right: 5%;
+  width: 70%;
+}
+
+.menu_card_right .title {
+  font-size: 1.1rem;
+}
+
+.menu_card_right .description {
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color:rgb(160, 160, 160);
+}
