@@ -11,9 +11,9 @@ export const List = () => {
       <Header />
       <Flex width="1350px" margin="auto" justifyContent="space-between">
         <Box width="930px">
-          {/* <Accordion>
+          <Accordion header={'1'}>
             {id}
-          </Accordion> */}
+          </Accordion>
         </Box>
         <Box width="260px">
 
