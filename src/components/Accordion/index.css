@@ -1,0 +1,38 @@
+.accordion_header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  transition: all 0.3s;
+  font-weight: 600;
+  color: rgb(78, 76, 76);
+}
+
+.accordion_header:hover {
+  background-color: rgba(248, 247, 247,0.5);
+}
+
+.accordion_header:first-child {
+  border-top: 1px solid rgb(217, 220, 233);
+}
+
+.accordion_icon {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.accordion_icon img {
+  width: 20px;
+}
+
+.expansion {
+  border-top: 1px solid rgb(217, 220, 233);
+  border-bottom: 1px solid rgb(217, 220, 233);
+  overflow: hidden;
+  transition: height 0.5s, padding 0.3s;
+}
+
+.children {
+  padding: 10px 24px;
+}
+

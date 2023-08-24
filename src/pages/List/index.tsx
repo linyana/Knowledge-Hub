@@ -1,4 +1,4 @@
-import { Box, Flex, Header } from "@/components"
+import { Accordion, Box, Flex, Header } from "@/components"
 import { useLocation } from "react-router"
 
 export const List = () => { 
@@ -11,7 +11,9 @@ export const List = () => {
       <Header />
       <Flex width="1350px" margin="auto" justifyContent="space-between">
         <Box width="930px">
-          {id}
+          {/* <Accordion>
+            {id}
+          </Accordion> */}
         </Box>
         <Box width="260px">
 
