@@ -1,8 +1,49 @@
 import { IQuestionsType } from "../../types";
 
 export const ReactQuestions: IQuestionsType = [
-	{
+  {
 		id: "react1",
+		title: "React中key的作用",
+		children: (
+			<>
+				<p>
+          在 React 中，key 是用于标识列表中每个元素的特殊属性。当你在使用 map() 或任何循环生成多个组件或元素时，key 属性必须被包含在生成的元素中。
+				</p>
+        <ul>
+          <li>
+            <span className="title">元素的唯一标识:</span> key 用于唯一标识列表中的每个元素。这样 React 在进行元素更新时可以准确地定位到每个元素，提高渲染性能和效率。
+          </li>
+          <li>
+            <span className="title">元素的重用:</span> React 使用 key 来跟踪元素的身份。当元素的 key 保持不变时，React 会假设这是相同的元素，并尝试更新它，而不是重新创建。这在列表重新排序或有新元素插入时尤其有用。
+          </li>
+          <li>
+            <span className="title">优化列表更新:</span> 通过为列表元素提供稳定的唯一标识，React 可以高效地计算出列表的差异，并仅更新实际发生变化的元素。这样可以减少不必要的 DOM 操作，提高性能。
+          </li>
+        </ul>
+			</>
+		),
+  },
+  {
+		id: "react2",
+		title: "用index作为key可能会引发的问题",
+		children: (
+			<>
+        <ul>
+          <li>
+          若对列表进行了逆序添加或删除时，会产生没有必要的真实DOM更新。
+          </li>
+          <li>
+          若结果中还有如input等输入类DOM就会产生错误DOM更新。
+          </li>
+          <li>
+            其他情况可以用index作为key，但不推荐。
+          </li>
+        </ul>
+			</>
+		),
+  },
+	{
+		id: "react3",
 		title: "React中setState后发生了什么",
 		children: (
 			<>
@@ -22,5 +63,5 @@ export const ReactQuestions: IQuestionsType = [
 				</p>
 			</>
 		),
-	},
+  },
 ];
