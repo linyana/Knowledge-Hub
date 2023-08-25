@@ -42,7 +42,7 @@
 
 .accordion input[type="checkbox"]:checked ~ .children {
 	opacity: 1;
-	max-height: 9em;
+	max-height: 5000px;
 	padding: 32px 0;
 	border-bottom: 1px solid #e5e5e5;
 }
