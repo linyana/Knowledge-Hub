@@ -1,38 +1,105 @@
-.accordion_header {
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 16px;
-  transition: all 0.3s;
-  font-weight: 600;
-  color: rgb(78, 76, 76);
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
+
+.accordion .header {
+	cursor: pointer;
+	padding: 1em 0;
+	border-bottom: 1px solid #e5e5e5;
+	color: #7288a2;
+	font-size: 1.15rem;
+	font-weight: 400;
+	font-family: "Hind", sans-serif;
+	transition: all 0.2s;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.accordion_header:hover {
-  background-color: rgba(248, 247, 247,0.5);
+.title {
+	padding-right: 16px;
 }
 
-.accordion_header:first-child {
-  border-top: 1px solid rgb(217, 220, 233);
+.accordion .header:hover {
+	color: #03b5d2;
+	border-bottom: 1px solid #03b5d2;
 }
 
-.accordion_icon {
-  cursor: pointer;
-  transition: transform 0.3s;
+.accordion .children {
+	font-size: 1rem;
+	font-weight: 300;
+	font-family: "Hind", sans-serif;
 }
 
-.accordion_icon img {
-  width: 20px;
-}
-
-.expansion {
-  border-top: 1px solid rgb(217, 220, 233);
-  border-bottom: 1px solid rgb(217, 220, 233);
-  overflow: hidden;
-  transition: height 0.5s, padding 0.3s;
+.accordion input {
+	display: none;
 }
 
 .children {
-  padding: 10px 24px;
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	font-size: 1rem;
+	font-weight: 300;
+	will-change: opacity, max-height;
+	transition: all 0.4s;
+	margin: 0;
 }
 
+.accordion input[type="checkbox"]:checked ~ .children {
+	opacity: 1;
+	max-height: 9em;
+	padding: 32px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion input[type="checkbox"]:checked ~ label .header {
+	color: #03b5d2 !important;
+	border-bottom: 1px solid #03b5d2;
+}
+
+.arrow {
+	width: 12px;
+	height: 12px;
+	margin-right: 16px;
+	position: relative;
+	transition: all 0.4s;
+}
+
+.arrow_span1 {
+	position: absolute;
+	left: -4px;
+	top: 6px;
+	width: 12px;
+	height: 1px;
+	transform: rotate(45deg);
+	transition: all 0.4s;
+	background-color: black;
+}
+
+.arrow_span2 {
+	position: absolute;
+	left: 4px;
+	top: 6px;
+	width: 12px;
+	height: 1px;
+	transition: all 0.4s;
+	transform: rotate(-45deg);
+	background-color: black;
+}
+
+.accordion input[type="checkbox"]:checked ~ label .header .arrow_span1 {
+	transform: rotate(-45deg);
+	background-color: #03b5d2;
+}
+
+.accordion input[type="checkbox"]:checked ~ label .header .arrow_span2 {
+	transform: rotate(45deg);
+	background-color: #03b5d2;
+}
+
+.accordion .header:hover .arrow_span1 {
+	background-color: #03b5d2;
+}
+
+.accordion .header:hover .arrow_span2 {
+	background-color: #03b5d2;
+}
