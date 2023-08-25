@@ -14,7 +14,7 @@
 	align-items: center;
 }
 
-.title {
+.accordion .title {
 	padding-right: 16px;
 }
 
@@ -33,7 +33,7 @@
 	display: none;
 }
 
-.children {
+.accordion .children {
 	opacity: 0;
 	max-height: 0;
 	overflow: hidden;
@@ -56,7 +56,7 @@
 	border-bottom: 1px solid #03b5d2;
 }
 
-.arrow {
+.accordion .arrow {
 	width: 12px;
 	height: 12px;
 	margin-right: 16px;
@@ -64,7 +64,7 @@
 	transition: all 0.4s;
 }
 
-.arrow_span1 {
+.accordion .arrow_span1 {
 	position: absolute;
 	left: -4px;
 	top: 6px;
@@ -75,7 +75,7 @@
 	background-color: black;
 }
 
-.arrow_span2 {
+.accordion .arrow_span2 {
 	position: absolute;
 	left: 4px;
 	top: 6px;

@@ -1,17 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./index.css";
+import { IQuestionsType } from "@/constants/question/types";
 
-type ItemType = {
-	id: string;
-	title: string;
-	children: React.ReactNode;
+type IPropsType = {
+	items: IQuestionsType;
 };
 
-type AccordionProps = {
-	items: ItemType[];
-};
-
-export const Accordion = ({ items }: AccordionProps) => {
+export const Accordion = ({ items }: IPropsType) => {
 	const [openItemId, setOpenItemId] = useState("");
 
 	const handleToggle = (itemId: string) => {
