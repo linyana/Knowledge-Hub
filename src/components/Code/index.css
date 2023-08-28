@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'JetBrainsMono-Bold'; 
+  src: url('../../assets/font/JetBrainsMono-Bold.woff2');
+  font-weight: normal; 
+  font-style: normal;   
+}
+
+code span {
+  font-weight: 400!important;
+  color: #bbbbae;
+  font-family: JetBrainsMono-Bold JetBrains Mono,Consolas,'Courier New',monospace;
+}
+
+span.hljs-keyword, span.hljs-variable {
+  color: #c678dd;
+}
+
+span.hljs-title {
+  color: #e6c469;
+}
+
+span.hljs-params, 
+span.hljs-property {
+  color: #e06c6a;
+}
+
+span.hljs-number,
+span.hljs-literal {
+  color: #d19a66;
+}
+
+span.hljs-string {
+  color: #98c36e;
+}

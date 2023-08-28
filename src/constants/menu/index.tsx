@@ -30,7 +30,7 @@ export const MENU: IMenuType = [
         id: 'javascript',
         name: 'Javascript',
         icon: javaScrtiptIcon,
-        link: '/list?name=javscript',
+        link: '/list?name=javascript',
         description: 'JavaScript(简称JS)是一种常用的脚本编程语言,用于在网页上实现交互效果和动态功能。'
       },
       {

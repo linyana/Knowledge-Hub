@@ -2,6 +2,8 @@ import hljs from "highlight.js";
 import "highlight.js/styles/dark.css";
 import { useEffect, useRef } from "react";
 
+import './index.css'
+
 type IPropsType = {
   language: 'javascript'
   code: string
